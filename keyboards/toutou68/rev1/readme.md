@@ -1,33 +1,26 @@
-# toutou68, 68 keys RGB matrix
 
-A toutou68-key keyboard with per-key RGB, Right hotswap sockets, and USB-C.
+# TOUTOU68-WS-RGB
 
-## History
+![toutou68](https://github.com/user-attachments/assets/55c16b70-b51e-4730-afe9-43e2a327cc55)
 
-This keyboard was inspired by the [toutou68keys.io](https://68keys.io/) keyboard. The
-68keys keyboard has a similar layout to the
-[MagicForce 68]().
-[di0ib](https://github.com) did a
-[replacement PCB]()
-for the Magicforce 68.
+A 65% hotswap/type C in switch RGB keyboard from TOUTOU.
 
-I love the Magicforce 68, but wanted a few changes. As a colossally
-disproportionate response to this challenge, I created
-[a utility](https://github.com/) that generates PCBs from
-arbitrary KLE JSON files, and used it to create this keyboard.
+* Keyboard Maintainer: [YoyoD02](https://github.com/YoyoD02)
+* Hardware Supported: TOUTOU68-WS-RGB
+* Hardware Availability: [TOUTOU](******)
 
-## A note about backlighting
+Make example for this keyboard (after setting up your build environment):
 
-I wanted my per-key RGB keyboard to have a dim backlight on all keys, but didn't
-want to sacrifice cool RGB matrix effects to have it. So I wrote up
-[a QMK patch](https://github.com/sowbug/qmk_firmware/)
-that treats RGB(0, 0, 0) as eligible for backlighting. Unfortunately the QMK
-maintainers weren't interested (actually, now that I look back, I didn't submit
-a pull request, but rather discussed it in a chat room), so it's not upstreamed.
-Thus you'll have to add that patch (and
-[this](https://github.com/toutou/qmk_firmware/))
-to your copy of QMK and then enable it in config.h and rules.mk.
+    make toutou68/rev1:default
 
-## Building and flashing
+Flashing example for this keyboard:
 
-`qmk flash -kb toutou68/rev1 -km default`
+    make toutou68/rev1:default:flash
+
+To reset the board into bootloader mode, do one of the following:
+
+* Short the two-pad footprint to the left of the spacebar switch while the board is plugged in
+* Hold the Esc key while connecting the USB cable (also erases persistent settings)
+
+See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
+
