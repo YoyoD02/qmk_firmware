@@ -1,0 +1,13 @@
+file_format: "1"
+id: toutou68
+name: toutou!68
+type: board
+arch: arm
+features:
+  - keys
+  - underglow
+  - studio
+outputs:
+  - usb
+  - ble
+url: https://toutou
