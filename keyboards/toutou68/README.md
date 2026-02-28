@@ -1,11 +1,11 @@
 # toutou!68
 
-![toutou!68](https://i.imgur.com/0YWv5PE.png)
+![toutou!68](**)
 
-The toutou!68 is a hotswap 60% made by Nice Keyboards. https://nicekeyboards.com/nice-60
+The toutou!68 is a hotswap 60% made by Nice Keyboards.
 
 ## Building toutou!68 ZMK firmware
 
 ```
-west build -p -b TOUTOU68
+west build -p -b toutou68
 ```
